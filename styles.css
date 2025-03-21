@@ -1,0 +1,53 @@
+/* styles.css */
+body {
+  text-align: center;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin-top: 50px;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 20px;
+  background: #fff;
+  color: #ff5e78;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #ffb6c1;
+}
+
+.correct {
+  background-color: #4caf50 !important;
+}
+
+.wrong {
+  background-color: #f44336 !important;
+}
+
+@keyframes heartBlast {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.heart-animation {
+  animation: heartBlast 0.5s ease;
+}
